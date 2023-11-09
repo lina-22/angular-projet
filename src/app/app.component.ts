@@ -37,7 +37,7 @@ export class AppComponent {
 
   email = 'lina@xyz.com';
 
-  onSave() {
+  onSave(e: any) {
     console.log(this.email);
   }
 
