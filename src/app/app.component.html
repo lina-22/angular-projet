@@ -1,7 +1,17 @@
 <h1>Blog Application</h1>
-<h1>{{ title1 }}</h1>
+<!-- <h1>{{ "Title :" + getTitle() }}</h1>
 <ul>
   <li>Blog 1</li>
 </ul>
+<img src="{{ imageSrc }}" />
+<ul>
+  <li *ngFor="let blog of blogs">
+    {{ blog }}
+  </li>
+</ul> -->
+<p>{{ number }}</p>
 
-<app-blog-post></app-blog-post>
+<div (click)="onDivClicked()">
+  <button (click)="onClick($event)">Save</button>
+</div>
+<!-- <app-blog-post></app-blog-post> -->
