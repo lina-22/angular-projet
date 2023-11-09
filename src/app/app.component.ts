@@ -35,5 +35,11 @@ export class AppComponent {
     this.blogPosts = service.getBlogPost();
   }
 
+  email = 'lina@xyz.com';
+
+  onSave() {
+    console.log(this.email);
+  }
+
   //http call
 }
