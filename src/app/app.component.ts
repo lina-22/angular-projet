@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlogService } from './blog.service';
 
 @Component({
   selector: 'app-root',
@@ -15,15 +16,24 @@ export class AppComponent {
   //   return this.title1;
   // }
 
-  number = 1;
+  // number = 1;
 
-  onClick(e: any) {
-    console.log('Button Clicked', e);
-    e.stopPropagation();
-    this.number++;
+  // onClick(e: any) {
+  //   console.log('Button Clicked', e);
+  //   e.stopPropagation();
+  //   this.number++;
+  // }
+
+  // onDivClicked() {
+  //   console.log('div Clicked');
+  // }
+
+  blogPosts;
+
+  constructor(service: BlogService) {
+    // let service = new BlogService();
+    this.blogPosts = service.getBlogPost();
   }
 
-  onDivClicked() {
-    console.log('div Clicked');
-  }
+  //http call
 }

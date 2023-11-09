@@ -9,9 +9,15 @@
     {{ blog }}
   </li>
 </ul> -->
-<p>{{ number }}</p>
+<!-- <p>{{ number }}</p>
 
 <div (click)="onDivClicked()">
   <button (click)="onClick($event)">Save</button>
-</div>
+</div> -->
 <!-- <app-blog-post></app-blog-post> -->
+
+<div class="blog-post" *ngFor="let blogPost of blogPosts">
+  <h3>{{ blogPost.Title }}</h3>
+  <p>{{ blogPost.Description }}</p>
+  <p>{{ blogPost.Author }}</p>
+</div>
