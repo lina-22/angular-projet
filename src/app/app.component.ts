@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  blogs = [];
+  // blogs = [];
+  blog: any;
+  constructor() {
+    this.blog = {
+      Id: 1,
+      Title: 'Random Blog Post 1',
+      // Author: {
+      //   Name: 'Jhon Doe',
+      // },
+      Author: null,
+    };
+  }
 }
