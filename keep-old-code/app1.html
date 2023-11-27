@@ -1,0 +1,30 @@
+<h1>Blog Application</h1>
+<!-- <h1>{{ "Title :" + getTitle() }}</h1>
+<ul>
+  <li>Blog 1</li>
+</ul>
+<img src="{{ imageSrc }}" />
+<ul>
+  <li *ngFor="let blog of blogs">
+    {{ blog }}
+  </li>
+</ul> -->
+<!-- <p>{{ number }}</p>
+
+<div (click)="onDivClicked()">
+  <button (click)="onClick($event)">Save</button>
+</div> -->
+<!-- <app-blog-post></app-blog-post> -->
+
+<div class="blog-post" *ngFor="let blogPost of blogPosts">
+  <h3>{{ blogPost.Title }}</h3>
+  <p>{{ blogPost.Description }}</p>
+  <p>{{ blogPost.Author }}</p>
+</div>
+
+<!-- <input [value]="email" type="text" /> -->
+<input [(ngModel)]="email" type="text" />
+<button (click)="onSave($event)">Save</button>
+<p>{{ email }}</p>
+<img src="{{ imageurl }}" alt="" />
+<!-- <img [src]="imageurl" alt="" ; /> -->
